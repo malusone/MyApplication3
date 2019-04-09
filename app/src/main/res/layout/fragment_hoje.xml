@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".HojeFragment"
+             android:background="@color/colorAccent">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_hj"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" tools:ignore="MissingConstraints">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="394dp"
+                android:layout_height="409dp"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/cardView3" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.197">
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+                android:layout_width="195dp"
+                android:layout_height="149dp"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingConstraints"
+                android:id="@+id/cardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                android:layout_marginTop="8dp">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Tempo de Uso"
+                        tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="440dp"
+                        tools:layout_editor_absoluteX="5dp" android:textColor="#0c3b4e" android:textSize="20sp"
+                        android:textAlignment="center" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_conversion_absoluteHeight="32dp"
+                        tools:layout_conversion_absoluteWidth="155dp" android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="114dp" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="38dp" android:fontFamily="@font/roboto_light"/>
+
+                <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tempo" android:layout_marginLeft="69dp" android:layout_marginTop="47dp"
+                        android:layout_marginStart="69dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+                android:layout_width="195dp"
+                android:layout_height="149dp"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingConstraints"
+                android:id="@+id/cardView2"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Postura Correta"
+                        tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="440dp"
+                        tools:layout_editor_absoluteX="5dp" android:textColor="#0c3b4e" android:textSize="20sp"
+                        android:textAlignment="center" android:layout_width="wrap_content"
+                        android:layout_height="60dp" tools:layout_conversion_absoluteHeight="32dp"
+                        tools:layout_conversion_absoluteWidth="155dp" android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="81dp" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="26dp" android:fontFamily="@font/roboto_light"/>
+
+                <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/postura" android:layout_marginLeft="71dp" android:layout_marginTop="45dp"
+                        android:layout_marginStart="71dp" tools:ignore="DuplicateIds"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
